@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
+    <!-- IconIons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lobster&display=swap"
+    />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Excel</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="#">File</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Insert</a></li>
+        <li><a href="#">Layout</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+
+    <section class="Home-part">
+      <ion-icon name="copy-outline" id="copy-icon"></ion-icon>
+      <ion-icon name="cut-outline" id="cut-icon"></ion-icon>
+      <ion-icon name="clipboard-outline" id="paste-icon"></ion-icon>
+
+      <select id="font-family">
+        <!-- In the JS part -->
+      </select>
+
+      <select id="fontSizeSelector">
+        <option value="12px">12</option>
+        <option value="14px">14</option>
+        <option value="16px">16</option>
+        <option value="18px">18</option>
+        <option value="20px">20</option>
+        <option value="22px">22</option>
+        <option value="24px">24</option>
+        <option value="26px">26</option>
+      </select>
+
+      <i class="fas fa-bold" id="bold-icon"></i>
+      <i class="fas fa-italic" id="italic-icon"></i>
+      <i class="fas fa-underline" id="underline-icon"></i>
+
+      <i class="fas fa-align-left"></i>
+      <i class="fas fa-align-center"></i>
+      <i class="fas fa-align-right"></i>
+
+      <i class="fas fa-font" id="font-color-picker"></i>
+      <i class="fas fa-fill-drip" id="background-color-picker"></i>
+      
+
+      <ion-icon name="cloud-download" id="download-icon"></ion-icon>
+      <ion-icon name="cloud-upload" id="upload-icon"></ion-icon>
+      <input
+        type="file"
+        accept=".csv"
+        id="upload-input"
+        style="display: none"
+      />
+    </section>
+
+    <section class="parts">
+      <input type="text" id="cell-number" placeholder="Cell No." />
+      <img src="./fx.png" alt="" />
+      <input type="text" id="cell-input" placeholder="Texts" />
+    </section>
+
+    <!-- Table------------------->
+
+    <section class="section-table">
+      <table>
+        <thead>
+          <tr id="header-row">
+            <!-- Column headers will be generated here -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table content will be added here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="sheets">
+      <img src="./adddoc.png" alt="Add Sheet" id="add-sheet" />
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

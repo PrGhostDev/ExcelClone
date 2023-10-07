@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: ghostwhite;
+}
+
+.navbar {
+  width: 100%;
+  background-color: green;
+  padding: 1% 1% 0% 1%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-list li {
+  margin-right: 20px;
+}
+
+.navbar-list li:last-child {
+  margin-right: 0;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  padding: 6px 14px;
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-list a:hover,
+.navbar-list li:nth-child(2) a {
+  color: green;
+  background: ghostwhite;
+}
+
+.Home-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding: 1%;
+}
+
+.Home-part ion-icon,
+.Home-part i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.Home-part h3 {
+  cursor: none;
+  font-size: 1.4rem;
+}
+
+/* Style for font-family select */
+#font-family {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Style for font-size select */
+#fontSizeSelector {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.parts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  padding: 0% 2%;
+}
+
+.parts input[type="text"]:nth-child(1) {
+  width: 6%;
+  border: 1px solid #ccc;
+  padding: 1px;
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  background: white;
+}
+
+.parts input[type="text"]:nth-last-child(1) {
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 1%;
+  font-size: 18px;
+  background: white;
+}
+
+.parts img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Table */
+
+.section-table {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 4px;
+  overflow-x: auto;
+  max-height: 515px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  font-size: smaller;
+}
+
+#header-row {
+  background-color: ghostwhite;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+th {
+  /* width: 25px; */
+  text-align: center;
+  border: 1px solid black;
+  padding: 2px 40px;
+  background-color: white;
+}
+
+tbody {
+  background-color: white;
+}
+
+td {
+  width: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.162);
+  padding: 4px;
+}
+
+/* input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input[type="text"]:hover {
+  cursor: cell;
+} */
+
+.section-table::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.section-table::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .section-table {
+    max-width: 100%;
+  }
+}
+
+th:nth-child(1) {
+  width: 1%;
+  padding: 4px 20px;
+  background: gray;
+}
+
+th,
+td:nth-child(1) {
+  background: rgba(128, 128, 128, 0.495);
+}
+
+/* --------------------------------------- */
+
+ion-icon,
+i {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+ion-icon:hover,
+i:hover {
+  transform: scale(1.1);
+  background: rgba(128, 128, 128, 0.2);
+}
+
+/*Adding sheets ---------------------------------------- */
+
+.sheets {
+  width: 97%;
+  margin: auto;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  justify-content: flex-start;
+}
+
+.sheets .sheet-added {
+  display: flex;
+  width: 7%;
+  justify-content: space-between;
+  height: 22px;
+  align-items: center;
+  padding-left: 3px;
+  background: rgba(128, 128, 128, 0.2);
+}
+.sheets .sheet-added ion-icon {
+  font-size: medium;
+}
+
+.sheets img {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* .sheets img:hover {
+  background-color: ;
+} */
